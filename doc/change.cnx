@@ -1,9 +1,9 @@
-*change.txt*    For Vim version 7.4.  最近更新: 2013年8月
+*change.txt*    For Vim version 7.4.  最近更新: 2015年8月
 
 
 		  VIM 参考手册    by Bram Moolenaar
-				译者: Willis
-				http://vimcdoc.sf.net
+				译者: vimchina
+				http://www.vimchina.org
 
 
 本文档描述删除和修改文本的命令。在本文中，修改文本意味着用单个命令删除部分文本
@@ -326,6 +326,10 @@ g??			用 Rot13 对当前行进行编码。{Vi 无此功能}
 递 增 与 递 减 ~
 							*CTRL-A*
 CTRL-A			把当前光标之上或之后的数值或者字母加上 [count]。
+			{Vi 无此功能}
+
+							*v_CTRL-A*
+{Visual}CTRL-A		把高亮区域的数值或字母加上 [count]。
 			{Vi 无此功能}
 
 							*CTRL-X*
