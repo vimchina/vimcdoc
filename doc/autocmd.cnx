@@ -1,4 +1,4 @@
-*autocmd.txt*   For Vim version 7.4.  最近更新: 2013年8月
+*autocmd.txt*   For Vim version 7.4.  最近更新: 2015年10月27日
 
 
 		  VIM 参考手册    by Bram Moolenaar
@@ -239,6 +239,7 @@ Vim 识别以下事件，事件名的大小写被忽略 (例如，你可以使�
 |Syntax|		设置 'syntax' 选项时
 |EncodingChanged|	'encoding' 选项改变后
 |TermChanged|		'term' 的值改变后
+|OptionSet|		设置任意选项后
 
 	启动和退出
 |VimEnter|		完成所有的初始化步骤后
@@ -415,10 +416,14 @@ CmdwinLeave			退出命令行窗口前。可用来清除任何 CmdwinEnter
 				|cmdwin-char|
 							*ColorScheme*
 ColorScheme			载入色彩方案后。|:colorscheme|
+				模式与色彩方案匹配。当选项设置后，<afile> 用于表
+				示实际的文件名，<amatch> 表示新设置的色彩方案名
 
 							*CompleteDone*
 CompleteDone			插入模式补全结束之后。不管补会是否成功完成或是
 				被放弃都会激活本事件。|ins-completion|
+				变量 |v:completed_item| 包含着已完成项目的信息。
+
 							*CursorHold*
 CursorHold			用户在 'updatetime' 指定的时间里没有按键时。如
 				果用户还没有按键，该事件不会再次激活 (就是说，
@@ -588,6 +593,23 @@ MenuPopup			刚要显示弹出菜单前 (鼠标右键下)。用于根据光标
 					o	操作符等待
 					i	插入
 					c	命令行
+							*OptionSet*
+OptionSet			在设置了一个选项后。模式会匹配长选项名。变量
+				|v:option_old| 表示旧的选项值，|v:option_new|
+				表示刚被设置的选项值，|v:option_type| 表示它是
+				全局的还是局部的，而 |<amatch>| 表示选项是否被
+				设置。
+
+				由于很多原因，它和 'key' 选项不会在启动的时候
+				触发。
+
+				用例：检查 'backupdir' 和 'undodir' 选项指定的目
+				录是否存在，如果不存在则创建。
+
+				注意：最好不要在这个自动命令中重启一个选项，可能
+				会破坏插件。你总是可以通过命令 `:noa` 来阻止触发
+				这个自动命令。
+
 							*QuickFixCmdPre*
 QuickFixCmdPre			开始执行 quickfix 命令前 (|:make|、 |:lmake|、
 				|:grep|、|:lgrep|、|:grepadd|、|:lgrepadd|、
@@ -736,6 +758,13 @@ WinLeave			离开某窗口前。如果将要进入的窗口要显示的是别的
 ==============================================================================
 6. 模式						*autocmd-patterns* *{pat}*
 
+参数 {pat} 可以是一个逗号分隔的列表，这样命令会分别作用在每一个模式上。所以下面
+的命令：
+	:autocmd BufRead *.txt,*.info set et
+等价于：
+	:autocmd BufRead *.txt set et
+	:autocmd BufRead *.info set et
+
 文件模式 {pat} 用以下两种方式之一匹配文件名:
 1. 如果模式里没有 '/'，只匹配文件名的尾部 (不包括它之前的目录路径)。
 2. 如果模式里有 '/'，既匹配短本件名 (你输入的)，也匹配完整文件名 (扩展为完整路
@@ -827,7 +856,7 @@ WinLeave			离开某窗口前。如果将要进入的窗口要显示的是别的
 示例: >
     :au CursorHold <buffer>  echo 'hold'
     :au CursorHold <buffer=33>  echo 'hold'
-    :au CursorHold <buffer=abuf>  echo 'hold'
+    :au BufNewFile * au CursorHold <buffer=abuf>  echo 'hold'
 
 所有自动命令的命令都可用于局部于缓冲区的自动命令，只要简单地用这些特殊字符串来
 替代模式就行了。例如: >
