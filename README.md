@@ -1,12 +1,14 @@
 关于vimcdoc
 =======
 
-*  本项目是从sourceforge.net/projects/vimcdoc复制而来，目的是为了与vundle配合使用
-* 使方法: 在.vimrc或_vimrc内添加下面这句代码
-````
-Bundle "vimchina/vimcdoc"
-````
-* PS. :
-    * 这个工程是从[sourceforge](http://sourceforge.net/projects/vimcdoc)复制过来的，翻译工作不是我做的，有需要联系作者的请到SF上找联系方式。
-    * 这个工程的目的是可以顺利地与vundle配合使用，方便中文用户。如果翻译作者发布新的文档，我会尽力跟上。
-    * vimcdoc.sf.net 已经迁移到 Github 上来了，我会根据 vimcdoc 的更新。
+本项目是从 [sourceforge.net/projects/vimcdoc](http://sourceforge.net/projects/vimcdoc/) 复制而来，目的是为了与 [Vundle](https://github.com/VundleVim/VundleVim) 配合使用。
+
+*使用方法*: 在 .vimrc 或 _vimrc 文件内添加下面这句代码
+
+	Bundle "vimchina/vimcdoc"
+
+
+PS. 
+
+* vimcdoc.sf.net 即 Vim 中文文档项目已经两年没有更新，很多帮助文档已经落后。所以本项目的一个目的就是接过 Vim 中文本地化的大旗继续做下去。目前我们已经开始文档校对。
+* Vim的帮助文档是最棒的学习材料，仔细研读每一个专题对深入理解 Vim 非常有用，而 Vim 中文帮助则帮助学习者进一步降低学习难度。所以把本项目作为Vim插件来用真的非常棒，从今以后查找帮助再也不用担心看不懂英文了。例如: `:help help` 。
