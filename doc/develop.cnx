@@ -1,8 +1,9 @@
-*develop.txt*	 For Vim version 7.4.   最后更新: 2013年8月
+*develop.txt*	 For Vim version 7.4.   最后更新: 2014年3月27日
 
 
 		    Vim 参考手册    作者: Bram Moolenaar
-		  译者: jwdu，iCrazy，tocer (http://vimcdoc.sf.net)
+				    译者: jwdu，iCrazy，tocer，vimchina
+				    http://vimcdoc.sf.net
 
 
 Vim 的开发						*development*
@@ -17,8 +18,7 @@ Vim 的开发						*development*
 请先看一下 "src" 目录下的 README.txt 以便对源代码有一个总体的了解。
 
 Vim 是开源软件，鼓励所有人参与并改进 Vim。如果你想递交 patch，请使用 "diff -c"
-来产生上下文 (context) 格式的 diff 文件。可以参考一下
-http://www.vim.org/tips/tip.php?tip_id=618。
+来产生上下文 (context) 格式的 diff 文件。
 另见 http://vim.wikia.com/wiki/How_to_make_and_submit_a_patch 。
 
 ==============================================================================
