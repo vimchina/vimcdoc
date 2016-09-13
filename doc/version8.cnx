@@ -99,8 +99,7 @@ possibly keep them updated.  Vim will load them automatically, or only when
 desired.  See |packages|.
 
 
-New style tests ~
-新的测试 ~
+新式的测试 ~
 
 This is for Vim developers.  So far writing tests for Vim has not been easy.
 Vim 8 adds assert functions and a framework to run tests.  This makes it a lot
@@ -108,7 +107,6 @@ simpler to write tests and keep them updated.  Also new are several functions
 that are added specifically for testing. See |test-functions|.
 
 
-Window IDs ~
 窗口ID ~
 
 Previously windows could only be accessed by their number. And every time a
@@ -116,7 +114,6 @@ window would open, close or move that number changes.  Each window now has a
 unique ID, so that they are easy to find.  See |win_getid()| and |win_id2win()|.
 
 
-Viminfo uses timestamps ~
 Viminfo 中使用时间戳 ~
 
 Previously the information stored in viminfo was whatever the last Vim wrote
@@ -124,21 +121,18 @@ there.  Now timestamps are used to always keep the most recent items.
 See |viminfo-timestamp|.
 
 
-Wrapping lines with indent ~
 根据缩进折叠行 ~
 
 The 'breakindent' option has been added to be able to wrap lines without
 changing the amount of indent.
 
 
-Windows: DirectX support ~
 Windows系统：支持 DirectX ~
 
 This adds the 'renderoptions' option to allow for switching on DirectX
 (DirectWrite) support on MS-Windows.
 
 
-GTK+ 3 support ~
 支持 GTK+ 3 ~
 
 The GTK+ 3 GUI works just like GTK+ 2 except for hardly noticeable technical
@@ -147,7 +141,7 @@ available.  See src/Makefile for how to use GTK+ 3 instead.  See
 |gui-x11-compiling| for other details.
 
 
-Vim 脚 本 增 强						*new-vim-script-8*
+Vim脚本增强						*new-vim-script-8*
 -----------------------
 
 In Vim script the following types have been added:
@@ -167,10 +161,10 @@ printf() now accepts any type of argument for %s.  It is converted to a string
 like with string().
 
 
-Various new items					*new-items-8*
+各种新特性						*new-items-8*
 -----------------
 
-Visual mode commands: ~
+可视模式命令： ~
 
 |v_CTRL-A|	CTRL-A		add N to number in highlighted text
 |v_CTRL-X|	CTRL-X		subtract N from number in highlighted text
@@ -178,12 +172,12 @@ Visual mode commands: ~
 |v_g_CTRL-X|	g CTRL-X	subtract N from number in highlighted text
 
 
-Insert mode commands: ~
+插入模式命令： ~
 
 |i_CTRL-G_U|	CTRL-G U	don't break undo with next cursor movement
 
 
-Options: ~
+选项： ~
 
 'belloff'		do not ring the bell for these reasons
 'breakindent'		wrapped line repeats indent
@@ -204,7 +198,7 @@ Options: ~
 'termguicolors'		use GUI colors for the terminal
 
 
-Ex commands: ~
+Ex 命令： ~
 
 |:cbottom|		scroll to the bottom of the quickfix window
 |:cdo|			execute command in each valid error list entry
@@ -343,7 +337,7 @@ New Vim variables: ~
 |v:vim_did_enter|	set just before VimEnter autocommands are triggered
 
 
-New autocommand events: ~
+新 autocommand 事件： ~
 
 |CmdUndefined|		a user command is used but it isn't defined
 |OptionSet|		after setting any option
@@ -354,18 +348,18 @@ New autocommand events: ~
 |WinNew|		after creating a new window
 
 
-New highlight groups: ~
+新高亮组 ~
 
 EndOfBuffer		filler lines (~) after the last line in the buffer.
 			|hl-EndOfBuffer|
 
 
-New items in search patterns: ~
+搜索模式里面的新项目： ~
 
 |/\%C|	\%C		match any composing characters
 
 
-New Syntax/Indent/FTplugin files: ~
+新语法、缩进、文件插件等文件： ~
 
 AVR Assembler (Avra) syntax
 Arduino syntax
@@ -402,14 +396,14 @@ Text ftplugin
 Vroom syntax and indent and ftplugin
 
 
-New Keymaps: ~
+新键盘映射： ~
 
 Armenian eastern and western
 Russian jcukenwintype
 Vietnamese telex and vni
 
 ==============================================================================
-INCOMPATIBLE CHANGES				*incompatible-8*
+不 兼 容 的 改 变					*incompatible-8*
 
 These changes are incompatible with previous releases.  Check this list if you
 run into a problem when upgrading from Vim 7.4 to 8.0.
