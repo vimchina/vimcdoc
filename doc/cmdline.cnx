@@ -3,7 +3,8 @@
 
 		  	VIM 参 考 手 册    	by Bram Moolenaar
 
-				翻译: Dasn, tocer  http://vimcdoc.sf.net
+				翻译: Dasn, tocer, vimchina
+				http://vimcdoc.sf.net
 
 
 				*Cmdline-mode* *Command-line-mode*
@@ -440,6 +441,8 @@ Ex 命令有几个特别的地方:
     :argdo
     :autocmd
     :bufdo
+    :cdo
+    :cfdo
     :command
     :cscope
     :debug
@@ -450,6 +453,8 @@ Ex 命令有几个特别的地方:
     :help
     :helpfind
     :lcscope
+    :ldo
+    :lfdo
     :make
     :normal
     :perl
@@ -646,11 +651,11 @@ Ex 命令有几个特别的地方:
 可以使用 CTRL-R 命令。例如，"%" 表示当前文件名，而 CTRL-R % 则立即插入当前文件
 名。见 |c_CTRL-R|。
 
-备注: 在 Vim 脚本中要避免特殊字符，可用 |fnameescape()|。
+备注: 如果要在 Vim 脚本中避免特殊字符的影响，可用 |fnameescape()|。参见 |`=| 。
 
 
 在 Ex 命令中，下列字符在可以使用文件名的地方有特殊的意义。它们同样可以用到表达
-式函数 expand() 中 |expand()|。
+式函数 |expand()| 中。
 	%	被当前文件名取代。				*:_%* *c_%*
 	#	被轮换文件名取代。				*:_#* *c_#*
 	#n	(n 是一个数字) 被第 n 个缓冲区的文件名取代。    *:_#0* *:_#n*
@@ -677,6 +682,8 @@ Ex 命令有几个特别的地方:
 	   #			轮换文件名
 	   \#			#
 	   \\#			\#
+参见 |`=|。
+
 
 			       *:<cword>* *:<cWORD>* *:<cfile>* *<cfile>*
 			       *:<sfile>* *<sfile>* *:<afile>* *<afile>*
@@ -695,11 +702,11 @@ Ex 命令有几个特别的地方:
 		   件) 时，才与 <afile> 不同。
 	<sfile>    执行 ":source" 命令时，替换为正在被 "source" 执行的文件名。
 		   *E498*
-		   执行函数时，替换为 "function {function-name}"；其中，函数嵌
-		   套调用表示为:
-		   "function {function-name1}..{function-name2}"。注意，如果
-		   <sfile> 用在函数里，那么文件名修饰符 (filename-modifiers)
-		   就没用了。
+		   执行函数时，替换为 "function {function-name}[{lnum}]"
+		   其中，函数嵌套调用表示为:
+		   "function {function-name1}[{lnum}]..{function-name2}[{lnum}]"
+		   注意 如果<sfile> 用在函数里，那么文件名修饰符
+		   (filename-modifiers) 就没用了。
 	<slnum>	   执行 ":source" 命令时，替换为行号。 *E842*
 		   执行函数时，替换为相对函数开始处的行号。
 
