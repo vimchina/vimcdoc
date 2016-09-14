@@ -1,40 +1,40 @@
-*version8.txt*  For Vim version 8.0.  ×î½ü¸üĞÂ: 2016Äê9ÔÂ12ÈÕ
+*version8.txt*  For Vim version 8.0.  æœ€è¿‘æ›´æ–°: 2016å¹´9æœˆ12æ—¥
 
 
-		  VIM ²Î¿¼ÊÖ²á    by Bram Moolenaar
+		  VIM å‚è€ƒæ‰‹å†Œ    by Bram Moolenaar
 
 
 				*vim8* *vim-8* *version-8.0* *version8.0*
-»¶Ó­Ê¹ÓÃVim 8£¡´óÁ¿µÄbug±»ĞŞ¸´£¬»¹ÓĞºÜ¶àºÜ°ôµÄÌØĞÔ¼ÓÈë½øÀ´¡£±¾ÎÄµµÁĞ³öËùÓĞĞÂ
-ÏîÄ¿ºÍ´ÓVim 7.4ÒÔÀ´¶ÔÏÖÓĞÌØĞÔµÄ¸Ä¶¯¡£Vim 7.4µÄ×îĞÂ²¹¶¡¿ÉÒÔ´ÓÕâÀïÕÒµ½£º|vim-7.4|
+æ¬¢è¿ä½¿ç”¨Vim 8ï¼å¤§é‡çš„bugè¢«ä¿®å¤ï¼Œè¿˜æœ‰å¾ˆå¤šå¾ˆæ£’çš„ç‰¹æ€§åŠ å…¥è¿›æ¥ã€‚æœ¬æ–‡æ¡£åˆ—å‡ºæ‰€æœ‰æ–°
+é¡¹ç›®å’Œä»Vim 7.4ä»¥æ¥å¯¹ç°æœ‰ç‰¹æ€§çš„æ”¹åŠ¨ã€‚Vim 7.4çš„æœ€æ–°è¡¥ä¸å¯ä»¥ä»è¿™é‡Œæ‰¾åˆ°ï¼š|vim-7.4|
 
-ÓÃÏÂÃæµÄÃüÁî¿ÉÒÔ¿´µ½ÄãÏÖÔÚÕıÔÚÊ¹ÓÃµÄVimµÄÍêÕû°æ±¾ºÍÌØĞÔĞÅÏ¢£º
+ç”¨ä¸‹é¢çš„å‘½ä»¤å¯ä»¥çœ‹åˆ°ä½ ç°åœ¨æ­£åœ¨ä½¿ç”¨çš„Vimçš„å®Œæ•´ç‰ˆæœ¬å’Œç‰¹æ€§ä¿¡æ¯ï¼š
 	:version
 
-ĞÂ ÌØ ĞÔ				|new-8|
-	Vim ½Å±¾ÔöÇ¿			|new-vim-script-8|
-	¸÷ÖÖĞÂÌØĞÔ			|new-items-8|
+æ–° ç‰¹ æ€§				|new-8|
+	Vim è„šæœ¬å¢å¼º			|new-vim-script-8|
+	å„ç§æ–°ç‰¹æ€§			|new-items-8|
 
-²» ¼æ Èİ µÄ ¸Ä ¶¯			|incompatible-8|
+ä¸ å…¼ å®¹ çš„ æ”¹ åŠ¨			|incompatible-8|
 
-¸Ä ÉÆ					|improvements-8|
+æ”¹ å–„					|improvements-8|
 
-±à Òë Ê± µÄ ¸Ä ±ä			|compile-changes-8|
+ç¼– è¯‘ æ—¶ çš„ æ”¹ å˜			|compile-changes-8|
 
-²¹ ¶¡					|patches-8|
+è¡¥ ä¸					|patches-8|
 
-ÔÄ¶ÁÎÄ¼ş |vi_diff.txt| ²é¿´ Vi ºÍ Vim 8.0 ²îÒìµÄ¸Å¿ö¡£
-ÔÄ¶ÁÎÄ¼ş |version4.txt|, |version5.txt|, |version6.txt| ºÍ |version7.txt| ²é¿´¸÷
-°æ±¾¼äµÄ²îÒì¡£
+é˜…è¯»æ–‡ä»¶ |vi_diff.txt| æŸ¥çœ‹ Vi å’Œ Vim 8.0 å·®å¼‚çš„æ¦‚å†µã€‚
+é˜…è¯»æ–‡ä»¶ |version4.txt|, |version5.txt|, |version6.txt| å’Œ |version7.txt| æŸ¥çœ‹å„
+ç‰ˆæœ¬é—´çš„å·®å¼‚ã€‚
 
-(ÒëÕß ×¢: ¸÷°æ±¾µÄĞŞÕıÒ»½Ú£¬ÒòÄÚÈİ¹ıÓÚËöËé£¬±£ÁôÔ­ÎÄÎ´·­Òë)
+(è¯‘è€… æ³¨: å„ç‰ˆæœ¬çš„ä¿®æ­£ä¸€èŠ‚ï¼Œå› å†…å®¹è¿‡äºçç¢ï¼Œä¿ç•™åŸæ–‡æœªç¿»è¯‘)
 
 ==============================================================================
-ĞÂ ÌØ ĞÔ							*new-8*
+æ–° ç‰¹ æ€§							*new-8*
 
-Ê×ÏÈÊÇ¶Ô±È½ÏÓĞÈ¤µÄĞÂÌØĞÔµÄ¸ÅÊö£¬ºóÃæÓĞÏêÏ¸µÄÃèÊö¡£
+é¦–å…ˆæ˜¯å¯¹æ¯”è¾ƒæœ‰è¶£çš„æ–°ç‰¹æ€§çš„æ¦‚è¿°ï¼Œåé¢æœ‰è¯¦ç»†çš„æè¿°ã€‚
 
-Òì²½ I/O Ö§³Ö£¬¹ÜµÀ ~
+å¼‚æ­¥ I/O æ”¯æŒï¼Œç®¡é“ ~
 
 Vim can now exchange messages with other processes in the background.  This
 makes it possible to have servers do work and send back the results to Vim.
@@ -49,7 +49,7 @@ This makes it possible to build very complex plugins, written in any language
 and running in a separate process.
 
 
-×÷Òµ ~
+ä½œä¸š ~
 
 Vim can now start a job, communicate with it and stop it.  This is very useful
 to run a process for completion, syntax checking, etc.  Channels are used to
@@ -57,7 +57,7 @@ communicate with the job.  Jobs can also read from or write to a buffer or a
 file.  See |job_start()|.
 
 
-¼ÆÊ±Æ÷ ~
+è®¡æ—¶å™¨ ~
 
 Also asynchronous are timers.  They can fire once or repeatedly and invoke a
 function to do any work.  For example: >
@@ -76,7 +76,7 @@ example above, to pass an argument to the function: >
 This will call CheckTemp('out') four seconds later.
 
 
-ÄäÃûº¯Êı ºÍ ±Õ°ü ~
+åŒ¿åå‡½æ•° å’Œ é—­åŒ… ~
 
 A short way to create a function has been added: {args -> expr}.  See |lambda|.
 This is useful for functions such as `filter()` and `map()`, which now also
@@ -90,7 +90,7 @@ User defined functions can also be a closure by adding the "closure" argument
 |:func-closure|.
 
 
-°ü¹ÜÀíÆ÷ ~
+åŒ…ç®¡ç†å™¨ ~
 
 Plugins keep growing and more of them are available than ever before.  To keep
 the collection of plugins manageable package support has been added.  This is
@@ -99,7 +99,7 @@ possibly keep them updated.  Vim will load them automatically, or only when
 desired.  See |packages|.
 
 
-ĞÂÊ½µÄ²âÊÔ ~
+æ–°å¼çš„æµ‹è¯• ~
 
 This is for Vim developers.  So far writing tests for Vim has not been easy.
 Vim 8 adds assert functions and a framework to run tests.  This makes it a lot
@@ -107,33 +107,33 @@ simpler to write tests and keep them updated.  Also new are several functions
 that are added specifically for testing. See |test-functions|.
 
 
-´°¿ÚID ~
+çª—å£ID ~
 
 Previously windows could only be accessed by their number. And every time a
 window would open, close or move that number changes.  Each window now has a
 unique ID, so that they are easy to find.  See |win_getid()| and |win_id2win()|.
 
 
-Viminfo ÖĞÊ¹ÓÃÊ±¼ä´Á ~
+Viminfo ä¸­ä½¿ç”¨æ—¶é—´æˆ³ ~
 
 Previously the information stored in viminfo was whatever the last Vim wrote
 there.  Now timestamps are used to always keep the most recent items.
 See |viminfo-timestamp|.
 
 
-¸ù¾İËõ½øÕÛµşĞĞ ~
+æ ¹æ®ç¼©è¿›æŠ˜å è¡Œ ~
 
 The 'breakindent' option has been added to be able to wrap lines without
 changing the amount of indent.
 
 
-WindowsÏµÍ³£ºÖ§³Ö DirectX ~
+Windowsç³»ç»Ÿï¼šæ”¯æŒ DirectX ~
 
 This adds the 'renderoptions' option to allow for switching on DirectX
 (DirectWrite) support on MS-Windows.
 
 
-Ö§³Ö GTK+ 3 ~
+æ”¯æŒ GTK+ 3 ~
 
 The GTK+ 3 GUI works just like GTK+ 2 except for hardly noticeable technical
 differences between them.  Configure still chooses GTK+ 2 if both 2 and 3 are
@@ -141,7 +141,7 @@ available.  See src/Makefile for how to use GTK+ 3 instead.  See
 |gui-x11-compiling| for other details.
 
 
-Vim½Å±¾ÔöÇ¿						*new-vim-script-8*
+Vimè„šæœ¬å¢å¼º						*new-vim-script-8*
 -----------------------
 
 In Vim script the following types have been added:
@@ -161,10 +161,10 @@ printf() now accepts any type of argument for %s.  It is converted to a string
 like with string().
 
 
-¸÷ÖÖĞÂÌØĞÔ						*new-items-8*
+å„ç§æ–°ç‰¹æ€§						*new-items-8*
 -----------------
 
-¿ÉÊÓÄ£Ê½ÃüÁî£º ~
+å¯è§†æ¨¡å¼å‘½ä»¤ï¼š ~
 
 |v_CTRL-A|	CTRL-A		add N to number in highlighted text
 |v_CTRL-X|	CTRL-X		subtract N from number in highlighted text
@@ -172,12 +172,12 @@ like with string().
 |v_g_CTRL-X|	g CTRL-X	subtract N from number in highlighted text
 
 
-²åÈëÄ£Ê½ÃüÁî£º ~
+æ’å…¥æ¨¡å¼å‘½ä»¤ï¼š ~
 
 |i_CTRL-G_U|	CTRL-G U	don't break undo with next cursor movement
 
 
-Ñ¡Ïî£º ~
+é€‰é¡¹ï¼š ~
 
 'belloff'		do not ring the bell for these reasons
 'breakindent'		wrapped line repeats indent
@@ -198,7 +198,7 @@ like with string().
 'termguicolors'		use GUI colors for the terminal
 
 
-Ex ÃüÁî£º ~
+Ex å‘½ä»¤ï¼š ~
 
 |:cbottom|		scroll to the bottom of the quickfix window
 |:cdo|			execute command in each valid error list entry
@@ -337,7 +337,7 @@ New Vim variables: ~
 |v:vim_did_enter|	set just before VimEnter autocommands are triggered
 
 
-ĞÂ autocommand ÊÂ¼ş£º ~
+æ–° autocommand äº‹ä»¶ï¼š ~
 
 |CmdUndefined|		a user command is used but it isn't defined
 |OptionSet|		after setting any option
@@ -348,18 +348,18 @@ New Vim variables: ~
 |WinNew|		after creating a new window
 
 
-ĞÂ¸ßÁÁ×é ~
+æ–°é«˜äº®ç»„ ~
 
 EndOfBuffer		filler lines (~) after the last line in the buffer.
 			|hl-EndOfBuffer|
 
 
-ËÑË÷Ä£Ê½ÀïÃæµÄĞÂÏîÄ¿£º ~
+æœç´¢æ¨¡å¼é‡Œé¢çš„æ–°é¡¹ç›®ï¼š ~
 
 |/\%C|	\%C		match any composing characters
 
 
-ĞÂÓï·¨¡¢Ëõ½ø¡¢ÎÄ¼ş²å¼şµÈÎÄ¼ş£º ~
+æ–°è¯­æ³•ã€ç¼©è¿›ã€æ–‡ä»¶æ’ä»¶ç­‰æ–‡ä»¶ï¼š ~
 
 AVR Assembler (Avra) syntax
 Arduino syntax
@@ -396,14 +396,14 @@ Text ftplugin
 Vroom syntax and indent and ftplugin
 
 
-ĞÂ¼üÅÌÓ³Éä£º ~
+æ–°é”®ç›˜æ˜ å°„ï¼š ~
 
 Armenian eastern and western
 Russian jcukenwintype
 Vietnamese telex and vni
 
 ==============================================================================
-²» ¼æ Èİ µÄ ¸Ä ±ä					*incompatible-8*
+ä¸ å…¼ å®¹ çš„ æ”¹ å˜					*incompatible-8*
 
 These changes are incompatible with previous releases.  Check this list if you
 run into a problem when upgrading from Vim 7.4 to 8.0.
@@ -783,7 +783,7 @@ Files:	    src/buffer.c
 
 Patch 7.4.055
 Problem:    Mac: Where availability macros are defined depends on the system.
-Solution:   Add a configure check. (Felix BÃ¼nemann)
+Solution:   Add a configure check. (Felix Bçœ‰nemann)
 Files:	    src/config.h.in, src/configure.in, src/auto/configure,
 	    src/os_mac.h
 
@@ -929,7 +929,7 @@ Problem:    A script cannot detect whether 'hlsearch' highlighting is actually
 Solution:   Add the "v:hlsearch" variable. (ZyX)
 Files:	    src/eval.c, src/ex_docmd.c,
 	    src/option.c, src/screen.c, src/search.c, src/tag.c, src/vim.h,
-	    src/testdir/test101.in, src/testdir/test101.ok, 
+	    src/testdir/test101.in, src/testdir/test101.ok,
 	    src/testdir/Make_amiga.mak, src/testdir/Make_dos.mak,
 	    src/testdir/Make_ming.mak, src/testdir/Make_os2.mak,
 	    src/testdir/Make_vms.mms, src/testdir/Makefile
@@ -1271,7 +1271,7 @@ Solution:   Fix using a character range literally. (Lech Lorens)
 Files:	    src/option.h
 
 Patch 7.4.139
-Problem:    Crash when using :cd in autocommand. (FranÃ§ois Ingelrest)
+Problem:    Crash when using :cd in autocommand. (Franè½ois Ingelrest)
 Solution:   Set w_localdir to NULL after freeing it. (Dominique Pelle)
 Files:	    src/ex_docmd.c, src/window.c
 
@@ -1690,7 +1690,7 @@ Files:	    src/ex_cmds.c
 
 Patch 7.4.210
 Problem:    Visual block mode plus virtual edit doesn't work well with tabs.
-	    (Liang Li) 
+	    (Liang Li)
 Solution:   Take coladd into account. (Christian Brabandt)
 Files:	    src/ops.c, src/testdir/test39.in, src/testdir/test39.ok
 
@@ -2009,7 +2009,7 @@ Solution:   Add line_lbr flag to regexec_nl().
 Files:	    src/regexp.c, src/regexp_nfa.c, src/regexp.h
 
 Patch 7.4.263
-Problem:    GCC 4.8 compiler warning for hiding a declaration (FranÃ§ois Gannaz)
+Problem:    GCC 4.8 compiler warning for hiding a declaration (Franè½ois Gannaz)
 Solution:   Remove the second declaration.
 Files:	    src/eval.c
 
@@ -2185,7 +2185,7 @@ Files:	    src/regexp.c
 
 Patch 7.4.292
 Problem:    Searching for "a" does not match accented "a" with new regexp
-	    engine, does match with old engine. (David BÃ¼rgin)
+	    engine, does match with old engine. (David Bçœ‰rgin)
 	    "ca" does not match "ca" with accented "a" with either engine.
 Solution:   Change the old engine, check for following composing character
 	    also for single-byte patterns.
@@ -2974,7 +2974,7 @@ Files:	    src/regexp_nfa.c, src/testdir/test64.in, src/testdir/test64.ok
 
 Patch 7.4.422
 Problem:    When using conceal with linebreak some text is not displayed
-	    correctly. (GrÃ¼ner Gimpel)
+	    correctly. (Grçœ‰ner Gimpel)
 Solution:   Check for conceal mode when using linebreak. (Christian Brabandt)
 Files:	    src/screen.c, src/testdir/test_listlbr.in,
 	    src/testdir/test_listlbr.ok
@@ -3692,7 +3692,7 @@ Files:	    src/testdir/test_command_count.in,
 
 Patch 7.4.543
 Problem:    Since patch 7.4.232 "1,3s/\n//" joins two lines instead of three.
-	    (Eliseo MartÃ­nez)  Issue 287
+	    (Eliseo Marté“†nez)  Issue 287
 Solution:   Correct the line count. (Christian Brabandt)
 	    Also set the last used search pattern.
 Files:	    src/ex_cmds.c, src/search.c, src/proto/search.pro
@@ -3906,7 +3906,7 @@ Solution:   Don't add one when this would overflow. (Hirohito Higashi)
 Files:	    src/eval.c
 
 Patch 7.4.579
-Problem:    Wrong cursor positioning when 'linebreak' is set and lines wrap. 
+Problem:    Wrong cursor positioning when 'linebreak' is set and lines wrap.
 Solution:   Fix it. (Christian Brabandt)
 Files:	    src/charset.c, src/screen.c
 
@@ -3943,7 +3943,7 @@ Files:	    src/ex_cmds.h, src/testdir/test_command_count.in,
 	    src/testdir/test_command_count.ok
 
 Patch 7.4.586
-Problem:    Parallel building of the documentation html files is not reliable. 
+Problem:    Parallel building of the documentation html files is not reliable.
 Solution:   Remove a cyclic dependency. (Reiner Herrmann)
 Files:	    runtime/doc/Makefile
 
@@ -4185,7 +4185,7 @@ Files:	    src/main.c
 
 Patch 7.4.629
 Problem:    Coverity warning for Out-of-bounds read.
-Solution:   Increase MAXWLEN to 254. (Eliseo MartÃ­nez)
+Solution:   Increase MAXWLEN to 254. (Eliseo Marté“†nez)
 Files:	    src/spell.c
 
 Patch 7.4.630
@@ -4585,12 +4585,12 @@ Patch 7.4.695
 Problem:    Out-of-bounds read, detected by Coverity.
 Solution:   Remember the value of cmap for the first matching encoding.  Reset
             cmap to that value if first matching encoding is going to be used.
-            (Eliseo MartÃ­nez)
+            (Eliseo Marté“†nez)
 Files:      src/hardcopy.c
 
 Patch 7.4.696
 Problem:    Not freeing memory when encountering an error.
-Solution:   Free the stack before returning. (Eliseo MartÃ­nez)
+Solution:   Free the stack before returning. (Eliseo Marté“†nez)
 Files:      src/regexp_nfa.c
 
 Patch 7.4.697
@@ -4673,7 +4673,7 @@ Files:      src/window.c, runtime/doc/tabpage.txt, src/ex_docmd.c,
 
 Patch 7.4.710
 Problem:    It is not possible to make spaces visible in list mode.
-Solution:   Add the "space" item to 'listchars'. (David BÃ¼rgin, issue 350)
+Solution:   Add the "space" item to 'listchars'. (David Bçœ‰rgin, issue 350)
 Files:      runtime/doc/options.txt, src/globals.h, src/message.h,
             src/screen.c, src/testdir/test_listchars.in,
             src/testdir/test_listchars.ok, src/testdir/Make_amiga.mak,
@@ -5412,7 +5412,7 @@ Solution:   Skip over `=expr` when expanding environment names.
 Files:      src/misc1.c
 
 Patch 7.4.833
-Problem:    More side effects of ":set all&" are missing. (BjÃ¶rn Linse)
+Problem:    More side effects of ":set all&" are missing. (Bjæšrn Linse)
 Solution:   Call didset_options() and add didset_options2() to collect more
             side effects to take care of.  Still not everything...
 Files:      src/option.c
@@ -5780,7 +5780,7 @@ Files:      src/fileio.c, src/os_mswin.c
 
 Patch 7.4.897
 Problem:    Freeze and crash when there is a sleep in a remote command.
-            (Karl Yngve LervÃ¥g)
+            (Karl Yngve Lervæ°“g)
 Solution:   Remove a message from the queue before dealing with it. (James
             Kolb)
 Files:      src/if_xcmdsrv.c
@@ -6446,7 +6446,7 @@ Files:      src/os_unix.c
 
 Patch 7.4.1008
 Problem:    The OS/2 code pollutes the source while nobody uses it these days.
-Solution:   Drop the support for OS/2. 
+Solution:   Drop the support for OS/2.
 Files:      src/feature.h, src/globals.h, src/macros.h, src/option.h,
             src/os_unix.c, src/os_unix.h, src/proto/os_unix.pro, src/vim.h,
             src/digraph.c, src/eval.c, src/ex_cmds.c, src/ex_docmd.c,
@@ -8904,7 +8904,7 @@ Files:      appveyor.yml
 
 Patch 7.4.1416
 Problem:    Using "u_char" instead of "char_u", which doesn't work everywhere.
-            (JÃ¶rg Plate)
+            (Jæšrg Plate)
 Solution:   Use "char_u" always.
 Files:      src/integration.c, src/macros.h
 
@@ -10431,7 +10431,7 @@ Files:      src/eval.c
 
 Patch 7.4.1683
 Problem:    Generated .bat files do not support --nofork.
-Solution:   Add check for --nofork.  Also add "setlocal". (Kevin CantÃº,
+Solution:   Add check for --nofork.  Also add "setlocal". (Kevin Cantç…¤,
             closes #659)
 Files:      src/dosinst.c
 
@@ -14136,7 +14136,7 @@ Files:      src/testdir/Make_all.mak, src/testdir/test_marks.in,
 
 Patch 7.4.2306
 Problem:    Default value for 'langremap' is wrong.
-Solution:   Set the right value. (JÃ¼rgen KrÃ¤mer)  Add a test.
+Solution:   Set the right value. (Jçœ‰rgen Krç›²mer)  Add a test.
 Files:      src/option.c, src/testdir/test_mapping.vim
 
 Patch 7.4.2307
